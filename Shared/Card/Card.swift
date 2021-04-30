@@ -8,12 +8,23 @@
 import Foundation
 import SwiftUI
 
-enum Suit: String {
-    case Spade = "Spade"
-    case Club = "Club"
-    case Heart = "Heart"
-    case Diamond = "Diamond"
+enum Suit {
+    case Spades, Hearts, Diamonds, Clubs
+    func simpleDescription() -> String {
+        switch self {
+        case .Spades:
+            return "Spades"
+        case .Hearts:
+            return "Hearts"
+        case .Diamonds:
+            return "Diamonds"
+        case .Clubs:
+            return "Clubs"
+        }
+    }
 }
+
+extension Suit: CaseIterable {}
 
 struct Card {
     let numberValue: Int
@@ -21,7 +32,7 @@ struct Card {
     let image: Image
     
     var isRed: Bool {
-        if (self.suit == Suit.Heart || self.suit == Suit.Diamond) {
+        if (self.suit == Suit.Hearts || self.suit == Suit.Diamonds) {
             return true
         } else {
             return false
