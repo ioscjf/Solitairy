@@ -15,6 +15,10 @@
 		B39FFC6225C0E71600C789EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FFC3725C0E71500C789EF /* ContentView.swift */; };
 		B39FFC6325C0E71600C789EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39FFC3825C0E71600C789EF /* Assets.xcassets */; };
 		B39FFC6425C0E71600C789EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39FFC3825C0E71600C789EF /* Assets.xcassets */; };
+		B3A8861E265854700047D446 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8861D265854700047D446 /* BoardView.swift */; };
+		B3A8861F265854700047D446 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8861D265854700047D446 /* BoardView.swift */; };
+		B3A88622265855080047D446 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A88621265855080047D446 /* CardView.swift */; };
+		B3A88623265855080047D446 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A88621265855080047D446 /* CardView.swift */; };
 		B3B34CAD2638FEC100366030 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CAC2638FEC100366030 /* Card.swift */; };
 		B3B34CB72639055D00366030 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CB62639055D00366030 /* Player.swift */; };
 		B3B34CBD2639057800366030 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CBC2639057800366030 /* Deck.swift */; };
@@ -54,6 +58,8 @@
 		B39FFC5825C0E71600C789EF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39FFC5C25C0E71600C789EF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B39FFC5E25C0E71600C789EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A8861D265854700047D446 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		B3A88621265855080047D446 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B3B34CAC2638FEC100366030 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B3B34CB62639055D00366030 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B3B34CBC2639057800366030 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 		B39FFC3525C0E71500C789EF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B3A88620265854740047D446 /* Views */,
 				B3B34CAB2638FEAA00366030 /* Card */,
 				B39FFC3625C0E71500C789EF /* SolitairyApp.swift */,
 				B39FFC3725C0E71500C789EF /* ContentView.swift */,
@@ -160,6 +167,15 @@
 				B39FFC5E25C0E71600C789EF /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B3A88620265854740047D446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3A8861D265854700047D446 /* BoardView.swift */,
+				B3A88621265855080047D446 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B3B34CAB2638FEAA00366030 /* Card */ = {
@@ -331,12 +347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A88622265855080047D446 /* CardView.swift in Sources */,
 				B3B34CB72639055D00366030 /* Player.swift in Sources */,
 				B3B34CC926390C8700366030 /* BoardModel.swift in Sources */,
 				B39FFC6125C0E71600C789EF /* ContentView.swift in Sources */,
 				B3B34CBD2639057800366030 /* Deck.swift in Sources */,
 				B3B34CC32639095700366030 /* Pile.swift in Sources */,
 				B3B34CAD2638FEC100366030 /* Card.swift in Sources */,
+				B3A8861E265854700047D446 /* BoardView.swift in Sources */,
 				B39FFC5F25C0E71600C789EF /* SolitairyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +365,8 @@
 			files = (
 				B39FFC6225C0E71600C789EF /* ContentView.swift in Sources */,
 				B39FFC6025C0E71600C789EF /* SolitairyApp.swift in Sources */,
+				B3A8861F265854700047D446 /* BoardView.swift in Sources */,
+				B3A88623265855080047D446 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
