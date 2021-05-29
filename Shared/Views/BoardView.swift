@@ -12,7 +12,7 @@ struct BoardView: View {
         
         // https://stackoverflow.com/questions/56505043/how-to-make-view-the-size-of-another-view-in-swiftui/56661706#56661706
         // Use this in place  of static size
-        
+        //
         VStack {
             HStack {
                 HStack {
