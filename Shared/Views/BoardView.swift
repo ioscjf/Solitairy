@@ -9,40 +9,43 @@ import SwiftUI
 
 struct BoardView: View {
     var body: some View {
-        
-        // https://stackoverflow.com/questions/56505043/how-to-make-view-the-size-of-another-view-in-swiftui/56661706#56661706
-        // Use this in place  of static size
-        //
-        VStack {
-            HStack {
+        GeometryReader { geometry in
+            let width: CGFloat = geometry.size.width / 10
+            VStack {
                 HStack {
-                    CardView()
-                    CardView()
-                    CardView()
-                    CardView()
+                    HStack {
+                        CardView(width: .constant(width))
+                        CardView(width: .constant(width))
+                        CardView(width: .constant(width))
+                        CardView(width: .constant(width))
+
+                    }
+                    .padding()
+                    HStack {
+                        CardView(width: .constant(width))
+                        CardView(width: .constant(width))
+                    }
+                    .padding()
                 }
-                .padding([.top, .trailing])
+                .padding(.top)
                 HStack {
-                    CardView()
-                    CardView()
+                    let array: [CardView] = [CardView(width: .constant(CGFloat(30.0))), CardView(width: .constant(CGFloat(30.0)))]
+                    let array1: [CardView] = [CardView(width: .constant(CGFloat(30.0))), CardView(width: .constant(CGFloat(30.0))), CardView(width: .constant(CGFloat(30.0))), CardView(width: .constant(CGFloat(30.0)))]
+                    let array2: [CardView] = [CardView(width: .constant(CGFloat(30.0)))]
+                    CardStackView(width: .constant(width), cards: .constant(array))
+                    CardStackView(width: .constant(width), cards: .constant(array1))
+                    CardStackView(width: .constant(width), cards: .constant(array2))
+                    CardStackView(width: .constant(width), cards: .constant(array))
+                    CardStackView(width: .constant(width), cards: .constant(array2))
+                    CardStackView(width: .constant(width), cards: .constant(array1))
+                    CardStackView(width: .constant(width), cards: .constant(array))
                 }
-                .padding([.top, .leading])
+                .padding()
             }
-            .padding(.top)
-            HStack {
-                CardView()
-                CardView()
-                CardView()
-                CardView()
-                CardView()
-                CardView()
-                CardView()
-            }
-            .padding()
+            .ignoresSafeArea()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .background(Color.green)
         }
-        .ignoresSafeArea()
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(Color.green)
     }
 }
 

@@ -24,6 +24,8 @@
 		B3B34CBD2639057800366030 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CBC2639057800366030 /* Deck.swift */; };
 		B3B34CC32639095700366030 /* Pile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CC22639095700366030 /* Pile.swift */; };
 		B3B34CC926390C8700366030 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B34CC826390C8700366030 /* BoardModel.swift */; };
+		B3D00112266F0B9E002AC07E /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D00111266F0B9E002AC07E /* CardStackView.swift */; };
+		B3D00113266F0B9E002AC07E /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D00111266F0B9E002AC07E /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 		B3B34CBC2639057800366030 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		B3B34CC22639095700366030 /* Pile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pile.swift; sourceTree = "<group>"; };
 		B3B34CC826390C8700366030 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		B3D00111266F0B9E002AC07E /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B3A8861D265854700047D446 /* BoardView.swift */,
+				B3D00111266F0B9E002AC07E /* CardStackView.swift */,
 				B3A88621265855080047D446 /* CardView.swift */,
 			);
 			path = Views;
@@ -352,6 +356,7 @@
 				B3B34CC926390C8700366030 /* BoardModel.swift in Sources */,
 				B39FFC6125C0E71600C789EF /* ContentView.swift in Sources */,
 				B3B34CBD2639057800366030 /* Deck.swift in Sources */,
+				B3D00112266F0B9E002AC07E /* CardStackView.swift in Sources */,
 				B3B34CC32639095700366030 /* Pile.swift in Sources */,
 				B3B34CAD2638FEC100366030 /* Card.swift in Sources */,
 				B3A8861E265854700047D446 /* BoardView.swift in Sources */,
@@ -363,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D00113266F0B9E002AC07E /* CardStackView.swift in Sources */,
 				B39FFC6225C0E71600C789EF /* ContentView.swift in Sources */,
 				B39FFC6025C0E71600C789EF /* SolitairyApp.swift in Sources */,
 				B3A8861F265854700047D446 /* BoardView.swift in Sources */,
