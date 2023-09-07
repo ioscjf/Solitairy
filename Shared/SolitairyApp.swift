@@ -13,21 +13,7 @@ struct SolitairyApp: App {
         WindowGroup {
             //
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+ 
             
             
             
