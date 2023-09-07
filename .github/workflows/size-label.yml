@@ -5,17 +5,17 @@ jobs:
   add_size_label:
     runs-on: ubuntu-latest
     steps:
-      # # checkout the repo
-      # - uses: actions/checkout@v3
-      # # install fetch so we can inject it
-      # # manually for Octokit
-      # - run: npm install node-fetch@2
-      #   # install octokit so we can use it
-      #   # in the next nodejs step
-      # - run: npm install @octokit/rest
-      #   # this step actually parses the comment body
-      #   # and sets some output that will determine if
-      #   # the remaining steps should run
+      # checkout the repo
+      - uses: actions/checkout@v3
+      # install fetch so we can inject it
+      # manually for Octokit
+      - run: npm install node-fetch@2
+        # install octokit so we can use it
+        # in the next nodejs step
+      - run: npm install @octokit/rest
+        # this step actually parses the comment body
+        # and sets some output that will determine if
+        # the remaining steps should run
       - name: Add Size Label
         id: add_size_label
         uses: actions/github-script@v6
