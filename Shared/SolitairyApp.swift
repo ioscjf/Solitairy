@@ -11,7 +11,7 @@ import SwiftUI
 struct SolitairyApp: App {
     var body: some Scene {
         WindowGroup {
-            
+            //
             // test
             ContentView()
         }
