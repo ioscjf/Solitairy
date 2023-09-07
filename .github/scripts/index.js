@@ -17,7 +17,7 @@ const defaultSizes = {
 
 const actions = ["opened", "synchronize", "reopened"];
 
-var main = async ({ context, core }) => {
+module.exports = async ({ context, core }) => {
   const eventDataStr = await readFile(process.env.GITHUB_EVENT_PATH);
   const eventData = JSON.parse(eventDataStr);
 
@@ -153,4 +153,4 @@ if (require.main === module) {
   );
 }
 
-module.exports = { main };
+
