@@ -422,30 +422,7 @@ struct SolitairyApp: App {
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            //
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+       
             
             
             
