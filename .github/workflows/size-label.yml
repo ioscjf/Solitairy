@@ -1,6 +1,25 @@
-name: size-label
+name: Size Label
 on: pull_request_target
+
 jobs:
-  call-workflow:
-    uses: Solitairy/workflows/.github/workflows/size-label.yml@main
-    secrets: inherit
+  steps:
+    # # checkout the repo
+    # - uses: actions/checkout@v3
+    # # install fetch so we can inject it
+    # # manually for Octokit
+    # - run: npm install node-fetch@2
+    #   # install octokit so we can use it
+    #   # in the next nodejs step
+    # - run: npm install @octokit/rest
+    #   # this step actually parses the comment body
+    #   # and sets some output that will determine if
+    #   # the remaining steps should run
+    name: Add Size Label
+      id: add_size_label
+      uses: actions/github-script@v6
+      env:
+        CI_GITHUB_TOKEN: ${{ secrets.CI_GITHUB_TOKEN }}
+      with:
+        script: |
+          const script = require('./.github/scripts/index.js')
+          await script({context, core})
