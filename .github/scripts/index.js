@@ -80,6 +80,8 @@ async function main() {
         issue_number: pull_number,
         name: label
       });
+    } catch (error) {
+      core.error(error);
     }
   }
 
