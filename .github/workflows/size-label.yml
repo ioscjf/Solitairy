@@ -13,9 +13,8 @@ jobs:
         # install octokit so we can use it
         # in the next nodejs step
       - run: npm install @octokit/rest
-        # this step actually parses the comment body
-        # and sets some output that will determine if
-        # the remaining steps should run
+        # install diff so we can use it
+      - run: npm install diff
       - name: Add Size Label
         id: add_size_label
         uses: actions/github-script@v6
