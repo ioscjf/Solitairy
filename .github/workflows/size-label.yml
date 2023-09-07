@@ -2,5 +2,5 @@ name: size-label
 on: pull_request_target
 jobs:
   call-workflow:
-    uses: Solitairy/workflows/.github/workflows/size-labels.yml@main
+    uses: Solitairy/.github/workflows/size-labels.yml@main
     secrets: inherit
