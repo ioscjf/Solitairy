@@ -30,17 +30,17 @@ module.exports = async ({ context, core }) => {
     return false;
   }
 
-  const pullRequest = await octokit.rest.pulls.get({
-    owner: context.payload.repository.owner.login,
-    repo: context.payload.repository.name,
-    pull_number: context.payload.issue.number,
-  });
-
   const octokit = new Octokit({
     auth: process.env.CI_GITHUB_TOKEN,
           request: {
         fetch,
       },
+  });
+
+  const pullRequest = await octokit.rest.pulls.get({
+    owner: context.payload.repository.owner.login,
+    repo: context.payload.repository.name,
+    pull_number: context.payload.issue.number,
   });
 
   const pullRequestDiff = await octokit.pulls.get({
@@ -81,7 +81,7 @@ module.exports = async ({ context, core }) => {
         name: label
       });
     } catch (error) {
-      core.error(error);
+      console.error(error);
     }
   }
 
