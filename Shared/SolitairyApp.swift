@@ -17,18 +17,6 @@ struct SolitairyApp: App {
 
             
 
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
