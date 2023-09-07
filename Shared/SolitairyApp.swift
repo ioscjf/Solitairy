@@ -12,33 +12,7 @@ struct SolitairyApp: App {
     var body: some Scene {
         WindowGroup {
             //
-            
-            
-            //   
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
             
             
             
