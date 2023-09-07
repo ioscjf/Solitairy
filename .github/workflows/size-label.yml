@@ -14,7 +14,7 @@ jobs:
     #   # this step actually parses the comment body
     #   # and sets some output that will determine if
     #   # the remaining steps should run
-    name: Add Size Label
+    - name: Add Size Label
       id: add_size_label
       uses: actions/github-script@v6
       env:
