@@ -17,7 +17,7 @@ const defaultSizes = {
 
 const actions = ["opened", "synchronize", "reopened"];
 
-async function main() {
+var main = async ({ context, core }) => {
   const eventDataStr = await readFile(process.env.GITHUB_EVENT_PATH);
   const eventData = JSON.parse(eventDataStr);
 
