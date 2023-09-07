@@ -2,10 +2,10 @@
   "name": "size-label-action",
   "version": "1.0",
   "description": "GitHub action to assign labels based on pull request change sizes",
-  "main": "index.js",
+  "main": ".github/scripts/index.js",
   "author": "ioscjf",
   "bin": {
-    "size-label-action": "index.js"
+    "size-label-action": ".github/scripts/index.js"
   },
   "dependencies": {
     "@octokit/rest": "^19.0.11",
