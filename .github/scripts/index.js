@@ -40,7 +40,7 @@ module.exports = async ({ context, core }) => {
   const pullRequest = await octokit.rest.pulls.get({
     owner: context.payload.repository.owner.login,
     repo: context.payload.repository.name,
-    pull_number: context.payload.issue.number,
+    pull_number: context.payload.pull_request_number,
   });
 
   const pullRequestDiff = await octokit.pulls.get({
