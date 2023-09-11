@@ -31,7 +31,7 @@ module.exports = async ({ context, core }) => {
   }
 
   const octokit = new Octokit({
-    auth: process.env.CI_GITHUB_TOKEN,
+    auth: process.env.GITHUB_TOKEN,
           request: {
         fetch,
       },
